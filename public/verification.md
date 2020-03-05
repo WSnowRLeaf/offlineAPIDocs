@@ -307,15 +307,15 @@ private static void assemSign(Map<String, Object> treeMap, StringBuilder sb) {
 ## 1.3.9 首次联调示例
 
 首次联调可以依据上述规则，拼接好如下json串之后进行加签请求。
+```
+ 【待签名明文串】
+ 
+ acqMerId=41509208&acqSpId=Y471790403&authCode=134579761426152164&goodsId=123&goodsInfo=口罩&orderNo=JD202003051057240001&orderTime=20200305105724&orderType=wechat&txnAmt=1
 
-> 【待签名明文串】
->
-> acqMerId=41509208&acqSpId=Y471790403&authCode=134579761426152164&goodsId=123&goodsInfo=口罩&orderNo=JD202003051057240001&orderTime=20200305105724&orderType=wechat&txnAmt=1
->
-> 【签名密文串】
->
-> SnOf25uc9ZJ+Opmze+o7dsAggxQCB7/aYqlsEZ89V5T3RhsGw6p7ISO1BcnxAMuAWNhq3UOl+Ei4PtsVMnoaCTjY0IDoBnCCWdv98O5GMHp70uAAB/cI5EQrt1HRlM6Lb9VyL1f5BE1FthlSZYKlSvS8hOn3ZaDzN7z4N+4ijHI=
->
+ 【签名密文串】
+SnOf25uc9ZJ+Opmze+o7dsAggxQCB7/aYqlsEZ89V5T3RhsGw6p7ISO1BcnxAMuAWNhq3UOl+Ei4PtsVMnoaCTjY0IDoBnCCWdv98O5GMHp70uAAB/cI5EQrt1HRlM6Lb9VyL1f5BE1FthlSZYKlSvS8hOn3ZaDzN7z4N+4ijHI=
+```
+
 > 【最终报文串】
 >
 > {"acqMerId":"41509208","acqSpId":"Y471790403","authCode":"134579761426152164","goodsId":"123","goodsInfo":"口罩","orderNo":"JD202003051057240001","orderTime":"20200305105724","orderType":"wechat","signature":"SnOf25uc9ZJ+Opmze+o7dsAggxQCB7/aYqlsEZ89V5T3RhsGw6p7ISO1BcnxAMuAWNhq3UOl+Ei4PtsVMnoaCTjY0IDoBnCCWdv98O5GMHp70uAAB/cI5EQrt1HRlM6Lb9VyL1f5BE1FthlSZYKlSvS8hOn3ZaDzN7z4N+4ijHI=","txnAmt":"1"}
