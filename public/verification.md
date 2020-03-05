@@ -307,7 +307,7 @@ private static void assemSign(Map<String, Object> treeMap, StringBuilder sb) {
 ## 1.3.9 首次联调示例
 
 首次联调可以依据上述规则，拼接好如下json串之后进行加签请求。
-
+```java
 > 【待签名明文串】
 >
 > acqMerId=41509208&acqSpId=Y471790403&authCode=134579761426152164&goodsId=123&goodsInfo=口罩&orderNo=JD202003051057240001&orderTime=20200305105724&orderType=wechat&txnAmt=1
@@ -335,4 +335,5 @@ private static void assemSign(Map<String, Object> treeMap, StringBuilder sb) {
 > 【请求接口】
 >
 > /pay/micropay
+```
 
